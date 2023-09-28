@@ -6,19 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainInicioSinSesion extends AppCompatActivity {
+public class menuChurrasco extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_inicio_sin_sesion);
-    }
-    public void Churrasco(View view){
-        Intent churrasco = new Intent(this,menuChurrasco.class);
-        startActivity(churrasco);
+        setContentView(R.layout.activity_menu_churrasco);
     }
     public void Volver(View view){
-        Intent volver = new Intent(this,MainActivity.class);
+        Intent volver = new Intent(this,MainInicioSinSesion.class);
         startActivity(volver);
     }
 }
