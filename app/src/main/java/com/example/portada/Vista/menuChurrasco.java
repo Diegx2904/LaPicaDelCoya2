@@ -1,10 +1,13 @@
-package com.example.portada;
+package com.example.portada.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.portada.R;
+import com.example.portada.Vista.MenuPrincipal;
 
 public class menuChurrasco extends AppCompatActivity {
 
@@ -14,7 +17,7 @@ public class menuChurrasco extends AppCompatActivity {
         setContentView(R.layout.activity_menu_churrasco);
     }
     public void Volver(View view){
-        Intent volver = new Intent(this,MainInicioSinSesion.class);
+        Intent volver = new Intent(this, MenuPrincipal.class);
         startActivity(volver);
     }
 }

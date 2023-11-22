@@ -1,11 +1,12 @@
-package com.example.portada;
+package com.example.portada.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import com.example.portada.R;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(iniciosesion);
     }
     public void continuarSinSesion(View view){
-        Intent sinsesion = new Intent(this, MainInicioSinSesion.class);
+        Intent sinsesion = new Intent(this, MenuPrincipal.class);
         startActivity(sinsesion);
     }
 }
