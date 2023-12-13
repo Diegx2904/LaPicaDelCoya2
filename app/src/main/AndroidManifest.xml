@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +15,27 @@
         android:theme="@style/Theme.Portada"
         tools:targetApi="31">
         <activity
+            android:name=".Vista.ListaPedidos"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.menuChorrillana"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.menuCompleto"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAB6ym2etl6I6EHoy_xCT5dsv4EqDLpj-c" />
+
+        <activity
+            android:name=".Vista.MapaDeUbicacion"
+            android:exported="false" />
+        <activity
             android:name=".Vista.menuChurrasco"
             android:exported="false" />
         <activity
             android:name=".Vista.Registrarse"
-            android:exported="false" />
-        <activity
-            android:name=".ui.theme.registrarse_main"
-            android:exported="false" />
-        <activity
-            android:name=".activity_main_registrarse"
             android:exported="false" />
         <activity
             android:name=".Vista.MenuPrincipal"

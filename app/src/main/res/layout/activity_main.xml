@@ -22,7 +22,7 @@
         android:id="@+id/titulo_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="56dp"
         android:text="La Pica Del Coya"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#FFFFFF"
@@ -32,27 +32,26 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/btn_SinIniciar"
+        android:id="@+id/btnSinIniciar"
         android:layout_width="211dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="204dp"
         android:onClick="continuarSinSesion"
         android:text="Continuar sin iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_Iniciar"
+        android:id="@+id/btnIniciar"
         android:layout_width="208dp"
         android:layout_height="63dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginBottom="308dp"
         android:onClick="InicioSesion"
         android:text="Iniciar Sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

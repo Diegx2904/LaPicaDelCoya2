@@ -5,21 +5,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.portada.R;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button btnIniciar,btnSinIniciar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void InicioSesion(View view){
-        Intent iniciosesion = new Intent(this, MainInicioSesion.class);
-        startActivity(iniciosesion);
-    }
-    public void continuarSinSesion(View view){
-        Intent sinsesion = new Intent(this, MenuPrincipal.class);
-        startActivity(sinsesion);
+        btnIniciar = findViewById(R.id.btnIniciar);
+        btnSinIniciar = findViewById(R.id.btnSinIniciar);
+
+        btnIniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainInicioSesion.class);
+                startActivity(intent);
+            }
+        });
+        btnSinIniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MenuPrincipal.class);
+                startActivity(intent);
+            }
+        });
     }
 }

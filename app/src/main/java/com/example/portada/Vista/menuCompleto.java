@@ -16,11 +16,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class menuChurrasco extends AppCompatActivity {
+public class menuCompleto extends AppCompatActivity {
     RadioButton domicilio, tienda;
     ImageView volver;
     CheckBox bbq, ketchup, mostaza, mayonesa;
-    private Button agregar, cancelar, calcular;
+    Button agregar, cancelar, calcular;
     TextView totalFinal;
     private DatabaseReference databaseReference;
     private String userID;
@@ -28,7 +28,7 @@ public class menuChurrasco extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_churrasco);
+        setContentView(R.layout.activity_menu_completo);
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("pedidos");
@@ -40,11 +40,11 @@ public class menuChurrasco extends AppCompatActivity {
         ketchup = findViewById(R.id.cbKetchup);
         mostaza = findViewById(R.id.cbMostaza);
         mayonesa = findViewById(R.id.cbMayonesa);
-        agregar = findViewById(R.id.btnAgregarChurrasco);
+        agregar = findViewById(R.id.btnAgregarCompleto);
         cancelar = findViewById(R.id.btnCancelar);
         calcular = findViewById(R.id.btnCalcular);
         totalFinal = findViewById(R.id.txtTotal);
-        volver = findViewById(R.id.imgVolver);
+        volver =findViewById(R.id.imgVolver);
 
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,14 +59,14 @@ public class menuChurrasco extends AppCompatActivity {
 
                 eliminarPedido();
 
-                Toast.makeText(menuChurrasco.this, "Pedido cancelado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(menuCompleto.this, "Pedido cancelado", Toast.LENGTH_SHORT).show();
             }
         });
 
         calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int total = 5000;
+                int total = 1500;
                 if (bbq.isChecked())
                     total += 100;
                 if (ketchup.isChecked())
@@ -88,7 +88,7 @@ public class menuChurrasco extends AppCompatActivity {
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int total = 5000;
+                int total = 1500;
                 if (bbq.isChecked())
                     total += 100;
                 if (ketchup.isChecked())
@@ -111,17 +111,16 @@ public class menuChurrasco extends AppCompatActivity {
                 userOrderReference.child("mayonesa").setValue(mayonesa.isChecked());
                 userOrderReference.child("domicilio").setValue(domicilio.isChecked());
 
-                Toast.makeText(menuChurrasco.this, "Pedido agregado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(menuCompleto.this, "Pedido agregado", Toast.LENGTH_SHORT).show();
             }
         });
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(menuChurrasco.this, MenuPrincipal.class);
+                Intent intent = new Intent(menuCompleto.this, MenuPrincipal.class);
                 startActivity(intent);
             }
         });
-
     }
 
     private void eliminarPedido() {
@@ -129,5 +128,3 @@ public class menuChurrasco extends AppCompatActivity {
         userOrderReference.removeValue();
     }
 }
-
-

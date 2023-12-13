@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "946465497379",
-    "project_id": "portada-8837f",
-    "storage_bucket": "portada-8837f.appspot.com"
+    "project_number": "1033181710890",
+    "project_id": "lapicadelcoya",
+    "storage_bucket": "lapicadelcoya.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:946465497379:android:555c5db8bfb7e3720e6c96",
+        "mobilesdk_app_id": "1:1033181710890:android:53d274590c4f91d8311153",
         "android_client_info": {
           "package_name": "com.example.portada"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBRiJFxJinw5s0-AWIu78lECpaI3AdMoRw"
+          "current_key": "AIzaSyDq6OIFmUrNWtBbt7TDqwZdQNkFKp96rgU"
         }
       ],
       "services": {

@@ -21,13 +21,11 @@
         app:layout_constraintVertical_bias="0.15" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgVolver"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:background="#040404"
         android:backgroundTint="@color/black"
-        android:contentDescription="@string/app_name"
-        android:onClick="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,7 +35,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/ListaPedidos"
         android:layout_width="84dp"
         android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,15 +48,15 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="415dp"
-        android:layout_height="474dp"
+        android:layout_width="396dp"
+        android:layout_height="459dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713">
+        app:layout_constraintVertical_bias="0.54">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,12 +72,10 @@
                 android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/imgChurrasco"
                 android:layout_width="143dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:onClick="Churrasco"
                 app:srcCompat="@drawable/churrasco" />
 
             <TextView
@@ -91,7 +87,7 @@
                 android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/imgCompleto"
                 android:layout_width="145dp"
                 android:layout_height="144dp"
                 android:layout_gravity="center"
@@ -106,20 +102,25 @@
                 android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/imgChorrillana"
                 android:layout_width="145dp"
                 android:layout_height="140dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_chorrillana" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Papas Fritas" />
-
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/MapaBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     android:background="@drawable/ic_fondo">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgVolver"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:background="#040404"
@@ -28,31 +28,32 @@
         android:layout_height="231dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084"
+        app:layout_constraintVertical_bias="0.112"
         app:srcCompat="@drawable/ic_comida" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="271dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="412dp"
+        android:layout_marginBottom="460dp"
         android:text="Inicio De Sesion"
         android:textColor="@color/white"
         android:textSize="35dp"
+        android:gravity="center"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
+        android:layout_marginBottom="300dp"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
@@ -60,31 +61,31 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_iniciar"
         android:layout_width="103dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="220dp"
         android:onClick="Iniciar"
         android:text="Iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegistrarse"
         android:layout_width="124dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="220dp"
         android:onClick="Registrarse"
         android:text="Registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -95,10 +96,10 @@
         android:onClick="Facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871"
+        app:layout_constraintVertical_bias="0.82"
         app:srcCompat="@drawable/ic_facebook"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -106,10 +107,10 @@
         android:id="@+id/imageView5"
         android:layout_width="54dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_google" />
 
@@ -126,9 +127,9 @@
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54" />
+        app:layout_constraintVertical_bias="0.541" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
