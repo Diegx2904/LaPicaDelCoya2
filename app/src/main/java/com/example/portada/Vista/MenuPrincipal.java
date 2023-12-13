@@ -12,7 +12,7 @@ import com.example.portada.R;
 
 public class MenuPrincipal extends AppCompatActivity {
     Button Mapabtn;
-    ImageView imgChurrasco, imgCompleto, imgChorrillana, imgVolver, imgPedidos;
+    ImageView imgChurrasco, imgCompleto, imgChorrillana, imgVolver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,19 +21,11 @@ public class MenuPrincipal extends AppCompatActivity {
         imgCompleto = findViewById(R.id.imgCompleto);
         imgChorrillana = findViewById(R.id.imgChorrillana);
         imgVolver = findViewById(R.id.imgVolver);
-        imgPedidos = findViewById(R.id.ListaPedidos);
         Mapabtn = findViewById(R.id.MapaBoton);
         Mapabtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuPrincipal.this, MapaDeUbicacion.class);
-                startActivity(intent);
-            }
-        });
-        imgPedidos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MenuPrincipal.this, ListaPedidos.class);
                 startActivity(intent);
             }
         });
